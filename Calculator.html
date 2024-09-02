@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+		<meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> calculator</title>
+		<link rel="stylesheet"	 href="calculator.css">
+</head>
+<body>
+		<h1>
+				simple calculator
+		</h1>
+		<div id="calculatorContainer">
+		<input placeholder="type a number..." type="number">
+		<select id="arithmatic">
+				<option id="initial"  value="plus"> + </option>
+				<option value="minus"> - </option>
+				<option value="multiplication"> * </option>
+								<option value="divide"> / </option>
+								<option value="power"> ^ </option>
+						<option value="root"> √ </option>
+		</select>
+		<input placeholder="type a number" type="number">
+		<button onclick="solve()" type="submit">solve</button>
+				<button onclick="reset()">reset</button>
+		<p>answer: <span id="mathans">No Answer yet </span></p>
+		</div>
+				<script src="calculator.js"></script>
+</body>
+</html>
